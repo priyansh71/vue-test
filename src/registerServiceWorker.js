@@ -1,6 +1,7 @@
 /* eslint-disable no-console */
 
 import { register } from 'register-service-worker'
+// let NODE_ENV
 const NODE_ENV = 'production'
 const BASE_URL = 'https://priyansh71.github.io/vue-test/'
 const LOCAL_URL = 'http://localhost:3000/vue-test/'

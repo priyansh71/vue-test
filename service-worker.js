@@ -1,8 +1,9 @@
 // service-worker.js
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
-workbox.core.setCacheNameDetails({ prefix: 'd4' })
+workbox.core.setCacheNameDetails({ prefix: 'vue-pwa' })
 
-export const LATEST_VERSION = 'v1.0.1' //Change this value every time before you build
+const LATEST_VERSION = 'v1.0.2' //Change this value every time before you build
 
 self.addEventListener('activate', (event) => {
   console.log(`%c ${LATEST_VERSION} `, 'background: #ddd; color: #0000ff')
